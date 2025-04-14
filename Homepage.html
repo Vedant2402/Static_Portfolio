@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Kankate | Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffdf6b;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.03);
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        .project, .experience, .education {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vedant Kankate</h1>
+        <p>Grad Student | AI, Cloud, Software Development Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Vedant, a passionate Computer Science Graduate student at California State University, LA. Skilled in AI, Cloud Tech, and full-stack development.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <strong>California State University - Los Angeles</strong>
+            <p>Master's in Computer Science (2024 - 2026)</p>
+        </div>
+        <div class="education">
+            <strong>MIT ADT University, Pune</strong>
+            <p>Bachelor's in Computer Science (2020 - 2024)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>GCP, AWS, Docker, Kubernetes, React, MongoDB, Node.js, Express, Flask, JavaScript, CI/CD, ML/AI</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <strong>Meal Planner App</strong>
+            <p>A scalable meal planner app developed using Node.js, Express, and MongoDB.</p>
+        </div>
+        <div class="project">
+            <strong>ML-powered Chatbot</strong>
+            <p>AI chatbot for Prakriti assessment using Streamlit and Random Forest.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience">
+            <strong>Graduate Assistant at CSULA</strong>
+            <p>Worked on AWS environment setup for ML model training.</p>
+        </div>
+        <div class="experience">
+            <strong>MERN Stack Developer at Webstack Academy</strong>
+            <p>Developed optimized full-stack applications with improved performance metrics.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact me: vedantkankate22@gmail.com | <a href="https://github.com/Vedant2402" target="_blank" style="color:#ffdf6b;">GitHub</a> | <a href="https://linkedin.com/in/vedant-kankate/" target="_blank" style="color:#ffdf6b;">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
